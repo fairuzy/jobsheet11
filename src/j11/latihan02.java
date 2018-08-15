@@ -44,7 +44,17 @@ public class latihan02 {
             kalimat.replace(arConvert[i][0], arConvert[i][1]);
         
         return kalimat;
-        String convert = vocal2Angka(kalimat)
+        String convert = vocal2Angka(kalimat);
+    }
+      public static void tampilPerKata(String kalimat, String convert) {
+        String[] arrKal = kalimat.split(" ");
+        String[] arrCon = convert.split(" ");
+        
+        for(int i = 0; i < arrKal.length; i++) 
+        {
+            System.out.println(arrKal[i] + " => " + arrCon[i]);
+            tampilPerkata(kalimat, convert);
+        }
     }
     
         
